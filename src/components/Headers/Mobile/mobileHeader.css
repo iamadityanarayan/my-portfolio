@@ -1,0 +1,28 @@
+.mobile-header .navbar-nav .nav-link  {
+  border-radius: 8px;
+  padding: 0.625rem;
+  background-color: transparent !important;
+}
+.mobile-header .navbar-nav .nav-link.active {
+  color: white;
+  background: rgb(192, 57, 226) !important;
+  background: hsl(300, 50%, 50%) !important;
+  background: #9667e0 !important;
+  font-weight: 700 !important;
+  border-radius: 10px;
+  box-shadow: 0 5rem 9rem rgba(0,0,250,.175)!important;
+}
+
+@media (max-width: 390px) {
+  .mobile-header .navbar-nav .nav-link  {
+    padding: 0.625rem !important;
+  }
+  .mobile-header .navbar-nav .nav-link.active {
+    padding: 0.625rem !important;
+  }
+}
+
+.px-0875{
+  padding-left: 0.875rem !important;
+  padding-right: 0.875rem !important;
+}

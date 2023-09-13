@@ -1,0 +1,47 @@
+.web-header .navbar-nav .nav-link {
+  border-radius: 8px;
+  background-color: transparent !important;
+  font-size: 16px !important;
+}
+
+.web-header .navbar-nav .nav-link.active {
+  color: white;
+  background: rgb(192, 57, 226) !important;
+  background: hsl(300, 50%, 50%) !important;
+  background: var(--purple-color)!important; /* 9900F0 */ 
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.px-0875 {
+  padding-left: 0.875rem !important;
+  padding-right: 0.875rem !important;
+}
+
+@media (min-width: 992px) {
+  .width-40 {
+    width: 65% !important;
+  }
+  .py-75 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .px-22 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  .width-40 {
+    width: 40% !important;
+  }
+  .py-75 {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  
+  .px-22 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}

@@ -1,15 +1,27 @@
-:root,*,html, body {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+:root {
+  --primary-color: #148F77;
+  --secondary-color: #f9c4f424;
+  --purple-light-color: rgb(207, 159, 255);
+  --purple-light-color: rgb(153, 0, 240);
+  --purple-color: #9667e0;
+  --purple-color: rgb(153, 0, 240);
+  --box-shadow-color: rgba(141, 113, 245, 0.788);
+  --box-shadow-color: rgb(153, 0, 240); /* 9900F0 */
+  --blue-color: #5e60ce;
+}
+
+*, html, body {
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #222 !important;
-
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.font-small {
+  font-size: clamp(0.75rem, 0.2131rem + 2.6846vw, 1.5rem);
 }

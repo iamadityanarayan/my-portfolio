@@ -1,22 +1,20 @@
-.text-light-secondary{
+/* .text-light-secondary {
   color: rgba(255, 255, 255, 0.5) !important;
-}
+} */
 
 .fw-500 {
   font-weight: 500 !important;
 }
-.home-left {
 
-}
 .space-y {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
 
-._btn {
-  /* padding: 1rem 2rem; */
+/* ._btn {
   border-radius: 30px;
   background-color: #333 !important;
+
   border-width: 4px;
   color: #fff;
   font-weight: 500;
@@ -26,20 +24,313 @@
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+.logo {
+  width: 120px;
 }
 
-.logo{
-  width: 180px;
+.home-page-dev-title {
+  font-size: 5.9vmin;
 }
 
-.home-page-name{
-  font-size: 6.9vmin;
+.home-page-name {
+  font-size: 8.9vmin;
   /* font-size: 3.9vh; */
 }
-.home-page-description{
-  font-size: 2.9vmin;
+
+.home-page-description {
+  font-size: 3.9vmin;
 }
 
-.fs{
+.fs {
   font-size: 4.8vmin;
 }
+
+.bg-purple-light {
+  background: var(--purple-light-color) !important;
+}
+
+.bg-purple {
+  background: var(--purple-color) !important;
+}
+
+.shadow-lg-z {
+  box-shadow: 0 1rem 1.9rem var(--box-shadow-color) !important;
+}
+
+.shadow-lg-web {
+  box-shadow: 0px 2px 4px 0px var(--box-shadow-color) !important;
+}
+
+.box-container {
+  width: 50%;
+  min-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.border-purple {
+  border-color: var(--purple-color) !important;
+}
+
+.text-purple {
+  color: var(--purple-color) !important;
+}
+
+.text-blue {
+  color: var(--blue-color);
+}
+
+.border-6 {
+  border-width: 6px !important;
+}
+
+.font-name {
+  font-size: clamp(1.75rem, 0.85rem + 4.5vw, 6.25rem);
+}
+
+.font-description {
+  font-size: clamp(1rem, -0.05rem + 5.25vw, 6.25rem);
+}
+
+.font-description-2 {
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+}
+
+.rs-w {
+  width: calc(16rem + 2vw) !important;
+}
+
+
+@media (min-width: 992px) {
+  .block-spacer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .rs-w {
+    width: calc(18rem + 2vw) !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .font-name {
+    font-size: clamp(1.875rem, -1.4655rem + 5.3879vw, 5rem);
+  }
+
+  .font-description {
+    font-size: clamp(1.125rem, -0.3448rem + 2.3707vw, 2.5rem);
+    font-size: clamp(1rem, 0.7328rem + 0.431vw, 1.25rem);
+  }
+
+  .border-6 {
+    border-width: 16px !important;
+  }
+
+  .project-description {
+    font-size: clamp(1.5rem, 0.7328rem + 0.431vw, 1.25rem);
+  }
+
+  .job-title {
+    font-size: clamp(1.5rem, 0.431rem + 1.7241vw, 2.5rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .rs-w {
+    width: calc(20rem + 5vw) !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .font-name {
+    font-size: clamp(1.5rem, -1.5733rem + 4.9569vw, 4.375rem);
+  }
+}
+
+@media (min-width: 1600px) {
+  .block-spacer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .rs-w {
+    width: calc(20rem + 5vw) !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .font-name {
+    font-size: clamp(3.125rem, 0rem + 3.125vw, 3.75rem);
+  }
+}
+
+.block-spacer-2 {
+  padding-bottom: 4rem !important;
+}
+
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+.zoom {
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.up-down {
+  animation-name: updown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+.ad-4 {
+  animation-duration: 3s;
+}
+
+.ad-5 {
+  animation-duration: 5s;
+}
+
+.ad-6 {
+  animation-duration: 6s;
+}
+
+.ad-7 {
+  animation-duration: 7s;
+}
+
+.ad-8 {
+  animation-duration: 8s;
+}
+
+.ad-1 {
+  animation-duration: 1s;
+}
+
+.ad-2 {
+  animation-duration: 2s;
+}
+
+.up {
+
+  transition: all .3s ease;
+}
+
+.up:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.home-img:hover {
+  animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+

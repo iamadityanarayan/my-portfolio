@@ -1,0 +1,28 @@
+.onhover {
+  display: none !important;
+  transition: 0.9s all ease-in-out;
+}
+
+._card-image {
+  width: 100%;
+  object-fit: fill;
+  object-position: bottom;
+  overflow: hidden;
+  transition: 0.9s all ease-in-out;
+  /* filter: brightness(0.8); */
+}
+
+.card-link{
+  transition: 0.9s all ease-in-out;
+  filter: brightness(0.9);
+}
+
+.card-link:hover  ._card-image{
+  filter: brightness(0.1);
+  transform: scale(1.2);
+  transition: 0.9s all ease-in-out;
+} 
+
+.card-link:hover .onhover {
+  display: block !important;
+}

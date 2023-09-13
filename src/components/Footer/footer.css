@@ -1,0 +1,9 @@
+.footer-section {
+  padding-bottom: 6rem !important;
+}
+
+@media (min-width: 992px) {
+  .footer-section {
+    padding-bottom: 2rem !important;
+  }
+}

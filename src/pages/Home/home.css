@@ -1,0 +1,11 @@
+
+@media (min-width: 992px) {
+  .home-height{
+    min-height: 450px;
+  }
+}
+@media (min-width: 1440px) {
+  .home-height{
+    min-height: 600px;
+  }  
+}
