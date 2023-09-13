@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Title from '../../components/Tittle/Title';
 import { Col, Row } from 'react-bootstrap';
 import { BsHeadset, BsInstagram, BsGithub } from 'react-icons/bs';
-import { IoMdMail } from 'react-icons/Io';
+import { MdEmail } from 'react-icons/md';
 import { GrLinkedin } from 'react-icons/gr';
 import './contact.css';
 import Mode from '../../components/Mode/Mode';
@@ -37,7 +37,7 @@ const Contact = () => {
               <Card className=' shadow-lg-web rounded-5'>
                 <Card.Body className='bg-light rounded-5 d-flex justify-content-around align-items-center py-4 '>
                   <div className='icon border-purple border border-2 rounded-circle d-flex justify-content-center align-content-center'>
-                    <IoMdMail className='fs-1 m-4' />
+                    <MdEmail className='fs-1 m-4' />
                   </div>
                   <h3 className=' bg-transparent text-'>Official Mail</h3>
                 </Card.Body>
