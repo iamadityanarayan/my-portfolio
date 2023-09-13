@@ -1,4 +1,3 @@
-import React from 'react';
 // import { BiLogoHtml5 } from 'react-icons/im';
 
 import Title from '../Tittle/Title';
