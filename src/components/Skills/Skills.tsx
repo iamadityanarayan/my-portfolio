@@ -24,6 +24,7 @@ const Skills = () => {
               >
                 <div className='p-4 rounded-pill d-flex gap-4 align-items-center shadow-lg-web'>
                   {s.icon}
+                  {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                   {s?.svg && s?.svg()}
                   <span className='icon-font'>{s.name}</span>
                 </div>

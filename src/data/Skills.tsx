@@ -48,7 +48,8 @@ const figma = () => (
 type SkillData = {
   name: string;
   icon?: JSX.Element;
-  svg?: unknown | JSX.Element; 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  svg?: any; // @typescript-eslint/no-explicit-any
 };
 
 const skillsData: SkillData[] = [
