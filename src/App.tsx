@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import MobileHeader from './components/Headers/Mobile/MobileHeader';
 import Home from './pages/Home/Home';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Work from './pages/Work/Work';
 import Project from './pages/Project/Project';
 import Contact from './pages/Contact/Contact';

@@ -7,11 +7,12 @@ import './work.css';
 import data from '../../data/workExperience';
 import Mode from '../../components/Mode/Mode';
 import { useTheme } from '../../context/ThemeContext';
+import TimeLine from '../../components/TimeLine/TimeLine';
 
 const Work = () => {
   const { isDarkMode } = useTheme();
   const y = data;
-  let reversedArray = [];
+  const reversedArray = [];
   for (let index = y.length - 1; index >= 0; index--) {
     const element = y[index];
     reversedArray.push(element);
@@ -75,6 +76,7 @@ const Work = () => {
           </div>
         ))}
       </div>
+      <TimeLine />
     </section>
   );
 };

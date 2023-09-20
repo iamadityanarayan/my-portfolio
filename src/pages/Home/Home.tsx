@@ -1,11 +1,9 @@
 import { Button, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
-import { useInView } from 'framer-motion';
 
 import Image from '../../assets/vid1.gif';
 import Mode from '../../components/Mode/Mode';
-import { useRef } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 
 const Home = () => {

@@ -10,6 +10,7 @@ interface ThemeContextProps {
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 // Custom hook to access the theme context
+// eslint-disable-next-line
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
@@ -27,8 +28,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('theme', JSON.stringify(!isDarkMode));
   };
 
-  useEffect(() => {
-    const ls: any = localStorage.getItem('theme');
+  useEffect(() => { // eslint-disable-next-line
+    const ls: any | null = localStorage.getItem('theme');  
     if (ls === null || ls === undefined) {
       return;
     } else {
