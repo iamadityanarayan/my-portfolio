@@ -15,7 +15,7 @@ const Project = () => {
 
       <Title title="My Portfolio's" />
       <div className='proejcts-contents'>
-        <ProjectsList data={portfoliosData} />
+        <ProjectsList data={portfoliosData} n={5} />
       </div>
     </section>
   );

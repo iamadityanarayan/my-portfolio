@@ -1,28 +1,40 @@
-.mobile-header .navbar-nav .nav-link  {
-  border-radius: 8px;
+.mobile-header .navbar-nav .nav-link {
+  border-radius: 10px;
   padding: 0.625rem;
   background-color: transparent !important;
 }
+
 .mobile-header .navbar-nav .nav-link.active {
   color: white;
   background: rgb(192, 57, 226) !important;
   background: hsl(300, 50%, 50%) !important;
   background: #9667e0 !important;
+  background: var(--purple-color) !important;
+  /* 9900F0 */
   font-weight: 700 !important;
   border-radius: 10px;
-  box-shadow: 0 5rem 9rem rgba(0,0,250,.175)!important;
+  box-shadow: 0 5rem 9rem rgba(0, 0, 250, .175) !important;
 }
 
 @media (max-width: 390px) {
-  .mobile-header .navbar-nav .nav-link  {
+  .mobile-header .navbar-nav .nav-link {
     padding: 0.625rem !important;
   }
+
   .mobile-header .navbar-nav .nav-link.active {
     padding: 0.625rem !important;
   }
 }
 
-.px-0875{
+.px-0875 {
   padding-left: 0.875rem !important;
   padding-right: 0.875rem !important;
+}
+
+.mobile-header .glass-1 {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }

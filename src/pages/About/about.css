@@ -7,3 +7,14 @@
 .job-info span, .job-duration {
   font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
 }
+
+.para2 {
+  font-size: clamp(1.2rem, 0.7328rem + 0.431vw, 1.25rem);
+}
+
+@media (min-width: 992px) {
+  .para2 {
+    font-size: clamp(1.5rem, 0.7328rem + 0.431vw, 1.25rem);
+  }
+
+}

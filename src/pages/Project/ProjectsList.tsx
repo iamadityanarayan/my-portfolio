@@ -3,13 +3,14 @@ import { ProjectsDataTypes } from '../../types/Project';
 
 type Props = {
   data: ProjectsDataTypes[];
+  n?: number;
 };
 
-const ProjectsList = ({ data }: Props) => {
+const ProjectsList = ({ data, n=0}: Props) => {
   return (
     <Row className=''>
       {data?.map((p, _) => (
-        <Col xs={12} md={6} lg={4} className='mb-3' key={_}>
+        <Col xs={12} md={6} lg={4} className={`mb-4 animate__animated animate__zoomIn animate__delay-${_  + n}s`} key={_}>
           <a
             href={p.link}
             className='card-link text-decoration-none'
@@ -23,8 +24,8 @@ const ProjectsList = ({ data }: Props) => {
                 variant='top'
                 src={p.imageSRC}
               />
-              <Card.Body className='rounded-5 position-absolute top-50 start-50 translate-middle bg-transparent text-white onhover p-0'>
-                <Card.Title className=' position-absolute0 mb-0 bg-transparent'>
+              <Card.Body className='rounded-5 position-absolute top-50 start-50 translate-middle bg-transparent text-white onhover p-0 w-75'>
+                <Card.Title className='text-center position-absolute0 mb-0 bg-transparent'>
                   {p.imageTitle}
                 </Card.Title>
               </Card.Body>

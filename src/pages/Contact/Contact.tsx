@@ -14,7 +14,7 @@ const Contact = () => {
         <Title title='Contact' className='' />
         <Mode className='end-0 pe-4' />
         <Row className='w--lg-75 mx-auto'>
-          <Col xs={12} md={4} className='mb-5'>
+          <Col xs={12} md={6} lg={4} className='mb-5'>
             <a
               href='tel:+919425953556'
               className=' text-decoration-none rounded-5'
@@ -29,7 +29,7 @@ const Contact = () => {
               </Card>
             </a>
           </Col>
-          <Col xs={12} md={4} className=''>
+          <Col xs={12} md={6} lg={4} className=''>
             <a
               href='mailto:tiwariadityanarayan@outlook.com'
               className=' text-decoration-none rounded-5'
@@ -49,7 +49,7 @@ const Contact = () => {
       <div className='pt-5'>
         <Title title='Follow me on' className="" />
         <Row className='w--lg-75 mx-auto'>
-          <Col xs={12} md={4} className='mb-5'>
+          <Col xs={12} md={6} lg={4} className='mb-5'>
             <a
               href='https://in.linkedin.com/in/adityanarayan-tiwari-b2b215101'
               target='_blank'
@@ -66,7 +66,7 @@ const Contact = () => {
               </Card>
             </a>
           </Col>
-          <Col xs={12} md={4} className='mb-5'>
+          <Col xs={12} md={6} lg={4} className='mb-5'>
             <a
               href='https://github.com/iamadityanarayan'
               target='_blank'
@@ -83,7 +83,7 @@ const Contact = () => {
               </Card>
             </a>
           </Col>
-          <Col xs={12} md={4} className='mb-'>
+          <Col xs={12} md={6} lg={4} className='mb-'>
             <a
               href='https://instagram.com/adityanarayantiwari_?igshid=OGQ5ZDc2ODk2ZA=='
               target='_blank'

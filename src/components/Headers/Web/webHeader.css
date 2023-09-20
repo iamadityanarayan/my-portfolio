@@ -1,14 +1,21 @@
 .web-header .navbar-nav .nav-link {
-  border-radius: 8px;
+  border-radius: 30px;
   background-color: transparent !important;
   font-size: 16px !important;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.web-header .navbar-nav .nav-link:hover {
+  font-weight: bold;
+  border-radius: 30px;
 }
 
 .web-header .navbar-nav .nav-link.active {
-  color: white;
+  color: white !important;
   background: rgb(192, 57, 226) !important;
   background: hsl(300, 50%, 50%) !important;
-  background: var(--purple-color)!important; /* 9900F0 */ 
+  background: var(--purple-color) !important;
+  /* 9900F0 */
   font-weight: bold;
   border-radius: 30px;
 }
@@ -20,28 +27,53 @@
 
 @media (min-width: 992px) {
   .width-40 {
-    width: 65% !important;
+    width: 50% !important;
   }
+
   .py-75 {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
+
   .px-22 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
 }
+
 @media (min-width: 1440px) {
   .width-40 {
     width: 40% !important;
   }
+
   .py-75 {
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
   }
-  
+
   .px-22 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
+}
+
+.web-header .glass-1 {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.web-header .navbar.glass-2 {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.91);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
 }

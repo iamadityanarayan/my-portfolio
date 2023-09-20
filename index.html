@@ -1,16 +1,146 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adityanarayan Tiwari</title>
-  </head>
-  <body class="">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Adityanarayan Tiwari</title>
+  <!-- Loading Spinner Styling -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* height: 100vh; */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .loader-container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      color: #FFF;
+      flex-direction: column;
+      /* gap: 30px; */
+    }
+
+    .text {
+      font-size: 30px;
+    }
+
+    .loader_ {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #9e34db;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spinner {
+      -webkit-animation: rotate 2s linear infinite;
+      animation: rotate 4s linear infinite;
+      z-index: 2;
+      /* position: absolute; */
+      top: 50%;
+      left: 50%;
+      /* margin: -25px 0 0 -25px; */
+      width: 50px;
+      height: 50px;
+    }
+
+    .spinner .path {
+      stroke: rgb(153, 0, 240);
+      stroke-linecap: round;
+      -webkit-animation: dash 1.5s ease-in-out infinite;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes dash {
+      0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+      }
+
+      100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+      }
+
+      100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="">
+  <div id="root">
+    <!-- Loading Spinner Div -->
+    <div class="loader-container">
+      <!-- <div class="loader_"></div> -->
+      <div class="svg">
+
+        <svg class="spinner" viewBox="0 0 50 50">
+          <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+      </div>
+      <p class="text">Loading...</p>
+    </div>
+
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
 </html>

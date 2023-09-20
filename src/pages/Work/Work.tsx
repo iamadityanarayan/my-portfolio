@@ -35,8 +35,8 @@ const Work = () => {
               {/* <Badge pill bg='success'> */}
               <Badge
                 pill
-                className='px-3 py-2'
-                bg={`${item.jobTypeColor ? item.jobTypeColor : 'secondary'}`}
+                className='px-xxl-3 py-xxl-2'
+                bg={`${item.jobTypeColor ? item.jobTypeColor : 'secondary'} `}
               >
                 {item.jobType}
               </Badge>
@@ -45,13 +45,13 @@ const Work = () => {
               <div className='job-info d-flex flex-column flex-lg-row gap-2'>
                 <div className='d-flex justify-content-start align-items-center gap-2'>
                   <FaBuilding className='fs-4 fst-italic' />
-                  <span className='fst-italic text-primary'>
+                  <span className='fst-italic text-green'>
                     {item.companyName}
                   </span>
                 </div>
                 <div className='d-flex justify-content-start align-items-center gap-2'>
                   <MdLocationOn className='fs-4 text-danger' />
-                  <span className='fst-italic text-primary'>
+                  <span className='fst-italic text-green'>
                     {item.location}
                   </span>
                 </div>

@@ -12,12 +12,12 @@ const MobileHeader = () => {
       <Container className='bg-white rounded-top-5'>
         <Navbar
           fixed='bottom'
-          className='bg-purple shadow-lg-z rounded-top-5 pb-0'
+          className='bg-purple shadow-lg-z  rounded-top-5 pb-0'
         >
           <Navbar.Collapse id='basic-navbar-nav' className='rounded-top-5'>
             <Nav
               className={`w-100 flex-wrap ${
-                isDarkMode ? 'bg-dark' : 'bg-white'
+                isDarkMode ? 'bg-dark' : 'bg-white' 
               }   flex-row justify-content-around p-2 py-3 rounded-top-5`}
             >
               <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/'>

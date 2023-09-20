@@ -1,24 +1,28 @@
 import { Button, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
+import { useInView } from 'framer-motion';
 
 import Image from '../../assets/vid1.gif';
 import Mode from '../../components/Mode/Mode';
+import { useRef } from 'react';
+import { useTheme } from '../../context/ThemeContext';
 
 const Home = () => {
   const naviagte = useNavigate();
-  const toContact = () => naviagte('/contact');
+  const toProjects = () => naviagte('/projects');
+  const {isDarkMode} = useTheme()
   return (
     <section className='home'>
       <Mode className='ps-2' />
-      <Row className='home-height py-xxl-5'>
+      <Row className='home-height py-xxl-5  '>
         <Col
           xs={12}
           lg={5}
           xxl={5}
-          className='box pt-5 pt-lg-0 ms-auto my-lg-auto'
+          className='box pt-5 pt-lg-0 ms-auto my-lg-auto animate__animated animate__zoomIn'
         >
-          <div className='box-container p-3 rs-w border-purple border border-6 rounded-circle'>
+          <div className='box-container p-3 rs-w border-purple border border-6 rounded-circle '>
             <img
               className='img-fluid rounded-circle zoom home-img'
               src={Image}
@@ -26,7 +30,11 @@ const Home = () => {
             />
           </div>
         </Col>
-        <Col xs={12} lg={7}>
+        <Col
+          xs={12}
+          lg={7}
+          className='animate__animated animate__zoomIn animate__delay-1s'
+        >
           <div className='home-content'>
             <h2 className='font-name text-center text-lg-start pt-4'>
               Hi there, <span className='wave'>👋</span>
@@ -49,19 +57,19 @@ const Home = () => {
               industry standards. I am always looking for new challenges and
               opportunities to grow as a developer.
             </p>
-            <div className='d-flex d-none flex-column flex-lg-row gap-3'>
+            <div className='d-flex flex-column flex-lg-row gap-3'>
               <Button
                 size='lg'
-                className='bg-purple fw-bold border-5 border-purple px-5 rounded-pill'
+                className='bg-purple fw-bold border-5 border-0 px-5 rounded-pill'
               >
-                Portfolio
+                Hire me
               </Button>
               <Button
-                onClick={toContact}
+                onClick={toProjects}
                 size='lg'
-                className='bg-transparent text-purple fw-bold border-5 border-purple px-5 rounded-pill'
+                className={`bg-transparent text-${isDarkMode ? 'light' : 'purple'} fw-bold border-5 border-purple px-5 rounded-pill`}
               >
-                Contact
+                Explore Projects
               </Button>
             </div>
           </div>

@@ -172,7 +172,6 @@
   padding-bottom: 4rem !important;
 }
 
-
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -225,7 +224,7 @@
 }
 
 .up {
-
+  transform: translateY(0px);
   transition: all .3s ease;
 }
 
