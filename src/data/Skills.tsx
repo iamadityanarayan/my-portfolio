@@ -48,7 +48,7 @@ const figma = () => (
 type SkillData = {
   name: string;
   icon?: JSX.Element;
-  svg?: unknown; 
+  svg?: unknown | JSX.Element; 
 };
 
 const skillsData: SkillData[] = [
