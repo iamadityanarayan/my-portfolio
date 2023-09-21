@@ -8,7 +8,7 @@ import { useTheme } from '../../../context/ThemeContext';
 const MobileHeader = () => {
   const { isDarkMode } = useTheme();
   return (
-    <div className='mobile-header d-lg-none'>
+    <div className='mobile-header d-lg-none z-3 position-fixed bottom-0'>
       <Container className='bg-white rounded-top-5'>
         <Navbar
           fixed='bottom'

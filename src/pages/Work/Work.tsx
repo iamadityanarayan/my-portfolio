@@ -1,16 +1,16 @@
-import { Badge } from 'react-bootstrap';
-import { MdLocationOn } from 'react-icons/md';
-import { FaBuilding } from 'react-icons/fa';
+// import { Badge } from 'react-bootstrap';
+// import { MdLocationOn } from 'react-icons/md';
+// import { FaBuilding } from 'react-icons/fa';
 import Title from '../../components/Tittle/Title';
 import './work.css';
 
 import data from '../../data/workExperience';
 import Mode from '../../components/Mode/Mode';
-import { useTheme } from '../../context/ThemeContext';
+// import { useTheme } from '../../context/ThemeContext';
 import TimeLine from '../../components/TimeLine/TimeLine';
 
 const Work = () => {
-  const { isDarkMode } = useTheme();
+  // const { isDarkMode } = useTheme();
   const y = data;
   const reversedArray = [];
   for (let index = y.length - 1; index >= 0; index--) {
@@ -22,7 +22,7 @@ const Work = () => {
       <div>
         <Title title='Work Experience' />
         <Mode className='end-0 pe-4' />
-        {reversedArray?.map((item, index) => (
+        {/* {reversedArray?.map((item, index) => (
           <div
             key={index}
             className={`section-work-experience ${
@@ -33,7 +33,6 @@ const Work = () => {
           >
             <div className='we-header d-flex justify-content-between align-items-center'>
               <h4 className='job-title'>{item.jobTitle}</h4>
-              {/* <Badge pill bg='success'> */}
               <Badge
                 pill
                 className='px-xxl-3 py-xxl-2'
@@ -74,7 +73,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
       <TimeLine />
     </section>
