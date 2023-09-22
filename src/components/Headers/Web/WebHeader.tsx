@@ -19,6 +19,10 @@ const WebHeader = () => {
       link: `/work`,
     },
     {
+      text: 'Skills',
+      link: `/skills`,
+    },
+    {
       text: 'Project',
       link: `/projects`,
     },

@@ -1,0 +1,23 @@
+.font-text{
+  font-size: clamp(1.25rem, 1.0115rem + 1.1923vw, 1.75rem);
+}
+
+@media (min-width: 991px) {
+  .font-text{
+    font-size: clamp(1.25rem, 1.0115rem + 1.1923vw, 1.75rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .font-text{
+    font-size: clamp(1.75rem, 0.25rem + 1.6667vw, 2.25rem);
+  } 
+}
+
+.box-hover{
+  transition: 1s all cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.box-hover:hover{
+  transform: translateY(-10px);
+}

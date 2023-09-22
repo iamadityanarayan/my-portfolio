@@ -12,6 +12,7 @@ import { useTheme } from './context/ThemeContext';
 import { BsSun, BsFillMoonStarsFill } from 'react-icons/bs';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
+import Skills from './pages/Skills/Skills';
 
 function App() {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -39,11 +40,14 @@ function App() {
           <div className='block-spacer'></div>
           <ScrollToTop>
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/work' element={<Work />} />
-              <Route path='/projects' element={<Project />} />
-              <Route path='/contact' element={<Contact />} />
+              <Route path='/'>
+                <Route index element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/work' element={<Work />} />
+                <Route path='/skills' element={<Skills />} />
+                <Route path='/projects' element={<Project />} />
+                <Route path='/contact' element={<Contact />} />
+              </Route>
             </Routes>
           </ScrollToTop>
           <div className='block-spacer-2'></div>

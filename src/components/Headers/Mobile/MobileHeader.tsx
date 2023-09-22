@@ -20,19 +20,22 @@ const MobileHeader = () => {
                 isDarkMode ? 'bg-dark' : 'bg-white' 
               }   flex-row justify-content-around p-2 py-3 rounded-top-5`}
             >
-              <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/'>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/'>
                 Home
               </NavLink>
-              <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/about'>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/about'>
                 About
               </NavLink>
-              <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/work'>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/work'>
                 Work
               </NavLink>
-              <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/projects'>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/skills'>
+                Skills
+              </NavLink>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/projects'>
                 Projects
               </NavLink>
-              <NavLink className={`nav-link ${isDarkMode ? 'text-light': ''}`} to='/contact'>
+              <NavLink className={`nav-link mobile-nav-link-font ${isDarkMode ? 'text-light': ''}`} to='/contact'>
                 Contact
               </NavLink>
             </Nav>

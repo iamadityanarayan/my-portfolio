@@ -27,7 +27,7 @@
 
 @media (min-width: 992px) {
   .width-40 {
-    width: 50% !important;
+    width: 60% !important;
   }
 
   .py-75 {
@@ -43,7 +43,7 @@
 
 @media (min-width: 1440px) {
   .width-40 {
-    width: 40% !important;
+    width: 50% !important;
   }
 
   .py-75 {
