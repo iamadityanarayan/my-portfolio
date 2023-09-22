@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import './skills.css';
 
-import  { backend, frontend, tools } from '../../data/Skills';
+import { backend, frontend, tools } from '../../data/Skills';
 
 const Skills = () => {
   return (
@@ -27,18 +27,13 @@ const Skills = () => {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
-                    duration: 0.3,
+                    duration: 0.8,
+                    delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: 'spring',
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
                   }}
                 >
                   {s.icon}
-                  {s.str && (<h4 className='m-0 fs-2'>{s.str}</h4>)}
+                  {s.str && <h4 className='m-0 fs-2'>{s.str}</h4>}
                   {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                   {s?.svg && s?.svg()}
                   <span className='icon-font'>{s.name}</span>
@@ -66,18 +61,13 @@ const Skills = () => {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
-                    duration: 0.3,
+                    duration: 0.8,
+                    delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: 'spring',
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
                   }}
                 >
                   {s.icon}
-                  {s.str && (<h4 className='m-0 fs-2'>{s.str}</h4>)}
+                  {s.str && <h4 className='m-0 fs-2'>{s.str}</h4>}
                   {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                   {s?.svg && s?.svg()}
                   <span className='icon-font'>{s.name}</span>
@@ -105,18 +95,13 @@ const Skills = () => {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
-                    duration: 0.3,
+                    duration: 0.8,
+                    delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: 'spring',
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
                   }}
                 >
                   {s.icon}
-                  {s.str && (<h4 className='m-0 fs-2'>{s.str}</h4>)}
+                  {s.str && <h4 className='m-0 fs-2'>{s.str}</h4>}
                   {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                   {s?.svg && s?.svg()}
                   <span className='icon-font'>{s.name}</span>
