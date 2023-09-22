@@ -1,4 +1,5 @@
 import Mode from '../../components/Mode/Mode';
+import Resume from '../../components/Resume/Resume';
 import Title from '../../components/Tittle/Title';
 import { aboutData } from '../../data/About';
 import './about.css';
@@ -19,6 +20,7 @@ const About = () => {
             </p>
           ))}
         </div>
+        <Resume />
       </section>
     </>
   );

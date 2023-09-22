@@ -51,7 +51,6 @@ function App() {
             </Routes>
           </ScrollToTop>
           <div className='block-spacer-2'></div>
-
           <Footer />
           <MobileHeader />
         </BrowserRouter>

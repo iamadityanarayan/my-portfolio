@@ -8,6 +8,7 @@ import data from '../../data/workExperience';
 import Mode from '../../components/Mode/Mode';
 // import { useTheme } from '../../context/ThemeContext';
 import TimeLine from '../../components/TimeLine/TimeLine';
+import Resume from '../../components/Resume/Resume';
 
 const Work = () => {
   // const { isDarkMode } = useTheme();
@@ -76,6 +77,7 @@ const Work = () => {
         ))} */}
       </div>
       <TimeLine />
+      <Resume />
     </section>
   );
 };
