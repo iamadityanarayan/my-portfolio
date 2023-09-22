@@ -3,15 +3,17 @@
 import Title from '../../components/Tittle/Title';
 import { Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import './skills.css';
 
 import { backend, frontend, tools } from '../../data/Skills';
+import Mode from '../../components/Mode/Mode';
+import './skills.css';
 
 const Skills = () => {
   return (
     <div>
-      <Title title='Front-end Skills' />
-      <div className='tech-skills py-4'>
+      <Title title='Front-end Skills' className='pt-5' />
+      <Mode className='end-0 pe-4' />
+      <div className='tech-skills pb-4'>
         <Row className=''>
           {frontend?.map((s, i) => {
             return (

@@ -7,7 +7,7 @@ import './project.css';
 const Project = () => {
   return (
     <section className='project-section py-3'>
-      <Title title='Projects & Portfolio' />
+      <Title title='Projects' />
       <Mode className='end-0 pe-4' />
       <div className='proejcts-contents'>
         <ProjectsList data={projectsData} />

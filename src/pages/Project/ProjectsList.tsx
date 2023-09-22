@@ -6,21 +6,29 @@ type Props = {
   n?: number;
 };
 
-const ProjectsList = ({ data, n=0}: Props) => {
+const ProjectsList = ({ data, n = 0 }: Props) => {
   return (
     <Row className=''>
       {data?.map((p, _) => (
-        <Col xs={12} md={6} lg={4} className={`mb-4 animate__animated animate__zoomIn animate__delay-${_  + n}s`} key={_}>
+        <Col
+          xs={12}
+          md={6}
+          lg={4}
+          className={`mb-4 animate__animated animate__zoomIn animate__delay-${
+            _ + n
+          }s`}
+          key={_}
+        >
           <a
             href={p.link}
             className='card-link text-decoration-none'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Card className='rounded-4 position-relative overflow-hidden'>
+            <Card className='rounded-4  position-relative overflow-hidden border-0 p-0 bg-transparent'>
               <Card.Img
                 loading='lazy'
-                className='rounded-4 img-thumbnail border-purple _card-image'
+                className='rounded-4 img-fluid _card-image p-0'
                 variant='top'
                 src={p.imageSRC}
               />
@@ -29,6 +37,9 @@ const ProjectsList = ({ data, n=0}: Props) => {
                   {p.imageTitle}
                 </Card.Title>
               </Card.Body>
+              <span className='position-absolute bottom-0 start-50 bg-purple p-1 px-4 rounded-4 translate-middle-x ms-2 mb-2 text-white  text-center '>
+                Click to open
+              </span>
             </Card>
           </a>
         </Col>

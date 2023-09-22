@@ -37,7 +37,7 @@ const projectsData: ProjectsDataTypes[] = [
 
 const portfoliosData: ProjectsDataTypes[] = [
   {
-    link: ``,
+    link: `https://adityanarayantiwari.vercel.app`,
     imageTitle: `Portfolio v2`,
     imageSRC: `${PortfolioImage2}`
   },

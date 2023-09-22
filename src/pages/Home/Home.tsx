@@ -9,6 +9,7 @@ import { useTheme } from '../../context/ThemeContext';
 const Home = () => {
   const naviagte = useNavigate();
   const toProjects = () => naviagte('/projects');
+  const toContacts = () => naviagte('/contact');
   const {isDarkMode} = useTheme()
   return (
     <section className='home'>
@@ -31,7 +32,7 @@ const Home = () => {
         <Col
           xs={12}
           lg={7}
-          className='animate__animated animate__zoomIn animate__delay-1s'
+          className='animate__animated animate__zoomIn animate__delay-1s my-auto'
         >
           <div className='home-content'>
             <h2 className='font-name text-center text-lg-start pt-4'>
@@ -57,6 +58,7 @@ const Home = () => {
             </p>
             <div className='d-flex flex-column flex-lg-row gap-3'>
               <Button
+              onClick={toContacts}
                 size='lg'
                 className='bg-purple fw-bold border-5 border-0 px-5 rounded-pill'
               >

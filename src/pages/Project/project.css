@@ -9,12 +9,16 @@
   object-position: bottom;
   overflow: hidden;
   transition: 0.9s all ease-in-out;
-  /* filter: brightness(0.8); */
+
 }
 
 .card-link{
   transition: 0.9s all ease-in-out;
-  filter: brightness(0.9);
+  filter: brightness(0.7);
+}
+
+.card-link:hover .onhover {
+  display: block !important;
 }
 
 .card-link:hover  ._card-image{
@@ -22,7 +26,3 @@
   transform: scale(1.2);
   transition: 0.9s all ease-in-out;
 } 
-
-.card-link:hover .onhover {
-  display: block !important;
-}
