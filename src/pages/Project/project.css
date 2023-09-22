@@ -14,7 +14,7 @@
 
 .card-link{
   transition: 0.9s all ease-in-out;
-  filter: brightness(0.7);
+  filter: brightness(0.9);
 }
 
 .card-link:hover .onhover {

@@ -37,7 +37,7 @@ const ProjectsList = ({ data, n = 0 }: Props) => {
                   {p.imageTitle}
                 </Card.Title>
               </Card.Body>
-              <span className='position-absolute bottom-0 start-50 bg-purple p-1 px-4 rounded-4 translate-middle-x ms-2 mb-2 text-white  text-center '>
+              <span className='position-absolute bottom-0 start-0 bg-purple p-1 px-4 rounded-1 ms-2 mb-2 text-white  text-center '>
                 Click to open
               </span>
             </Card>
