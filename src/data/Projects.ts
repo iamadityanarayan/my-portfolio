@@ -1,6 +1,6 @@
 import PortfolioImage1 from '../assets/projects/Portfolio-v1.png';
 import PortfolioImageLight2 from '../assets/projects/Portfolio-v2-light.png';
-import PortfolioImageDark2 from '../assets/projects/Portfolio-v2-dark.png';
+// import PortfolioImageDark2 from '../assets/projects/Portfolio-v2-dark.png';
 import MuraliPortfolioImage from '../assets/projects/Murali Krishna Portfolio.png';
 import BudgetCalculator from '../assets/projects/Budget Calculator.png';
 import ImageGallery from '../assets/projects/Image gallery.png';
