@@ -1,0 +1,4 @@
+.img-fluid-x{
+  /* max-width: 100% !important; */
+  width: calc(100% - 20vw - 25%) !important;
+}

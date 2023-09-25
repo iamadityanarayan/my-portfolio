@@ -19,7 +19,7 @@ const Home = () => {
           xs={12}
           lg={5}
           xxl={5}
-          className='box pt-5 pt-lg-0 ms-auto my-lg-auto animate__animated animate__zoomIn'
+          className='box pt-5 pt-lg-0 ms-auto my-lg-auto animate__animated animate__zoomIn animate__delay-1s'
         >
           <div className='box-container p-3 rs-w border-purple border border-6 rounded-circle '>
             <img
@@ -32,7 +32,7 @@ const Home = () => {
         <Col
           xs={12}
           lg={7}
-          className='animate__animated animate__zoomIn animate__delay-1s my-auto'
+          className='animate__animated animate__zoomIn my-auto'
         >
           <div className='home-content'>
             <h2 className='font-name text-center text-lg-start pt-4'>

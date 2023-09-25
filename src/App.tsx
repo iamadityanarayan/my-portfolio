@@ -13,6 +13,7 @@ import { BsSun, BsFillMoonStarsFill } from 'react-icons/bs';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import Skills from './pages/Skills/Skills';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -48,6 +49,7 @@ function App() {
                 <Route path='/projects' element={<Project />} />
                 <Route path='/contact' element={<Contact />} />
               </Route>
+              <Route path='*' element={<PageNotFound />} />
             </Routes>
           </ScrollToTop>
           <div className='block-spacer-2'></div>
