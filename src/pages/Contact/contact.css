@@ -1,16 +1,16 @@
 .font-text{
-  font-size: clamp(1.25rem, 1.0115rem + 1.1923vw, 1.75rem);
+  font-size: clamp(1rem, 0.3rem + 3.5vw, 4.5rem);
 }
 
 @media (min-width: 991px) {
   .font-text{
-    font-size: clamp(1.25rem, 1.0115rem + 1.1923vw, 1.75rem);
+    font-size: clamp(1.25rem, -20.5338rem + 35.1351vw, 1.5rem);
   }
 }
 
 @media (min-width: 1440px) {
   .font-text{
-    font-size: clamp(1.75rem, 0.25rem + 1.6667vw, 2.25rem);
+    font-size: clamp(1.75rem, 0.25rem + 1.6667vw, 2rem);
   } 
 }
 

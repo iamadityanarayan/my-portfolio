@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <section className='project-section py-3'>
       <Title title='Projects' />
-      <p className='mb-4 fst-italic text-secondary'>Please be aware that organizational projects have not been included in this section.</p>
+      <p className='mb-4 fst-italic text-secondary'>The organizational projects have not been included in this section.</p>
       <Mode className='end-0 pe-4' />
       <div className='proejcts-contents'>
         <ProjectsList data={projectsData} />

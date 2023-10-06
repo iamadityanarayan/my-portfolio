@@ -11,11 +11,11 @@ const Contact = () => {
       <section className='py-3'>
         <Title title='Contact' className='' />
         <Mode className='end-0 pe-4' />
-        <Row className='w--lg-75 mx-auto'>
+        <Row className='w--lg-75 mx-auto justify-content-center'>
           {contact?.map((e, i) => (
             <Col
               xs={12}
-              xl={6}
+              lg={6}
               className={`mb-4 animate__animated animate__zoomIn animate__delay-${i}s`}
               key={i}
             >
@@ -40,11 +40,11 @@ const Contact = () => {
       </section>
       <div className='pt-5'>
         <Title title='Follow me on' className='' />
-        <Row className='w--lg-75 mx-auto'>
+        <Row className='w--lg-75 mx-auto justify-content-center'>
           {socialAccounts?.map((e, i) => (
             <Col
               xs={12}
-              xl={6}
+              lg={6}
               className={`mb-4  animate__animated animate__zoomIn animate__delay-${
                 i + 2
               }s`}
