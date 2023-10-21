@@ -1,72 +1,92 @@
-import Card from 'react-bootstrap/Card';
 import Title from '../../components/Tittle/Title';
 import { Col, Row } from 'react-bootstrap';
 import Mode from '../../components/Mode/Mode';
 import { contact, socialAccounts } from '../../data/Contact';
+import { useTheme } from '../../context/ThemeContext';
 import './contact.css';
 
 const Contact = () => {
+  const { isDarkMode } = useTheme();
   return (
     <>
       <section className='py-3'>
-        <Title title='Contact' className='' />
+        <Title title='Contact' className=' px-2' />
         <Mode className='end-0 pe-4' />
+        <Row className='mb-3'>
+          <Col>
+            <div className=' rounded-5 p-3 -x-bg'>
+              <img
+                src='/src/assets/contact/contact.jpg'
+                className=' img-fluid border-0 rounded-4'
+                alt=''
+              />
+            </div>
+          </Col>
+        </Row>
         <Row className='w--lg-75 mx-auto justify-content-center'>
-          {contact?.map((e, i) => (
-            <Col
-              xs={12}
-              lg={6}
-              className={`mb-4 animate__animated animate__zoomIn animate__delay-${i}s`}
-              key={i}
-            >
-              <a href={e.link} className=' text-decoration-none rounded-5'>
-                <Card className=' shadow-lg-web rounded-5'>
-                  <Card.Body className='bg-light rounded-5 d-flex flex-column align-items-center p-4 p-xl-5'>
-                    <div className='icon border-purple border border-2 rounded-circle mb-xl-4'>
+          <Col xs={12} lg={6}>
+            <Title title={`# Let's talk...`} className='fs-2 px-2' />
+            {contact?.map((e, i) => (
+              <div key={i}>
+                <a
+                  href={e.link}
+                  className={`a-hover text-decoration-none text-${
+                    isDarkMode ? 'light' : 'success'
+                  } shadow rounded-3 d-flex flex-row align-items-center gap-4 my-3 flex-wra`}
+                >
+                  <div className='icon border-purple border border-2 rounded-3 w-max'>
+                    {e.icon}
+                  </div>
+                  <div className='d-flex flex-column flex-wrap text- gap-0 flex-wrap'>
+                    <h3
+                      className={`bg-transparent mb-0 font-text text-${
+                        isDarkMode ? 'light' : 'dark'
+                      }`}
+                    >
+                      {e.title}
+                    </h3>
+                    <p className='bg-transparent mb-0 font-text text-purple fw-500'>
+                      {e.text}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </Col>
+
+          <Col xs={12} lg={6}>
+            <Title title={`# Follow me on...`} className='fs-2 px-2' />
+            <Row className=' flex-wrap justify-content-start'>
+              {socialAccounts?.map((e, i) => (
+                <Col key={i} xs={12} lg={6} className=''>
+                  <a
+                    href={e.link}
+                    className={`a-hover text-decoration-none text-${
+                      isDarkMode ? 'light' : 'success'
+                    } shadow rounded-3 d-flex flex-row align-items-center gap-4 my-3 flex-wra`}
+                  >
+                    <div className='icon border-purple border border-2 rounded-3 w-max'>
                       {e.icon}
                     </div>
-                    <div className='d-flex flex-column  mt-3 text-center gap-xl-3 flex-wrap'>
-                      <h3 className=' bg-transparent font-text'>{e.title}:</h3>
-                      <h3 className=' bg-transparent font-text text-primary'>
-                        {e.text}
+                    <div className='d-flex flex-column flex-wrap text- gap-1 flex-wrap'>
+                      <h3
+                        className={`bg-transparent mb-0 font-text text-${
+                          isDarkMode ? 'light' : 'dark'
+                        }`}
+                      >
+                        {e.title}
                       </h3>
+                      <p className='bg-transparent mb-0 font-text text-purple fw-500'>
+                        {e.text}
+                      </p>
                     </div>
-                  </Card.Body>
-                </Card>
-              </a>
-            </Col>
-          ))}
+                  </a>
+                </Col>
+              ))}
+            </Row>
+          </Col>
         </Row>
       </section>
-      <div className='pt-5'>
-        <Title title='Follow me on' className='' />
-        <Row className='w--lg-75 mx-auto justify-content-center'>
-          {socialAccounts?.map((e, i) => (
-            <Col
-              xs={12}
-              lg={6}
-              className={`mb-4  animate__animated animate__zoomIn animate__delay-${
-                i + 2
-              }s`}
-              key={i}
-            >
-              <a href={e.link} className=' text-decoration-none rounded-5'>
-                <Card className=' shadow-lg-web rounded-5'>
-                  <Card.Body className='bg-light rounded-5 d-flex flex-column align-items-center p-5'>
-                    <div className='icon border-purple border border-2 rounded-circle mb-xl-4'>
-                      {e.icon}
-                    </div>
-                    <div className='d-flex flex-column  mt-3 text-center gap-xl-3 flex-wrap'>
-                      <h3 className=' bg-transparent font-text'>{e.title}</h3>
-                      <h3 className=' bg-transparent font-text'>{e.text}</h3>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </a>
-            </Col>
-          ))}
-        </Row>
-      </div>
     </>
   );
 };
