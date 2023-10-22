@@ -16,7 +16,7 @@ const Contact = () => {
           <Col>
             <div className=' rounded-5 p-3 -x-bg'>
               <img
-                src='/src/assets/contact/contact.jpg'
+                src='../../assets/contact/contact.jpg'
                 className=' img-fluid border-0 rounded-4'
                 alt=''
               />
