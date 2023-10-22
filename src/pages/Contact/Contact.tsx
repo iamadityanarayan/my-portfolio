@@ -4,6 +4,7 @@ import Mode from '../../components/Mode/Mode';
 import { contact, socialAccounts } from '../../data/Contact';
 import { useTheme } from '../../context/ThemeContext';
 import './contact.css';
+import ContactImg from '../../assets/contact/contact.jpg';
 
 const Contact = () => {
   const { isDarkMode } = useTheme();
@@ -16,7 +17,7 @@ const Contact = () => {
           <Col>
             <div className=' rounded-5 p-3 -x-bg'>
               <img
-                src='../../assets/contact/contact.jpg'
+                src={ContactImg}
                 className=' img-fluid border-0 rounded-4'
                 alt=''
               />
