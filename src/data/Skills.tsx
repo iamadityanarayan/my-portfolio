@@ -133,7 +133,7 @@ export const frontend: SkillData[] = [
     icon: <BiLogoJquery className='fs-1 jquery' />,
   },
   {
-    name: 'Angular 12',
+    name: 'Angular 16',
     icon: <SiAngular className='fs-1 angular' />,
   },
 ];

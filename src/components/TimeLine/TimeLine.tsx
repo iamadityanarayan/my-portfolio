@@ -33,7 +33,7 @@ const TimeLine = () => {
           <p className='mb-0 mt-3'>JavaScript development</p>
           <p className='my-0'>
             React.js | Typescript | React-Bootstrap | Material UI | Context API
-            | Hooks | Zustand | Angular 12 | Docker | UI Design | Figma
+            | Hooks | Zustand | Angular 16 | Docker | UI Design | Figma
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
