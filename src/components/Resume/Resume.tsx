@@ -1,17 +1,17 @@
 import { useTheme } from '../../context/ThemeContext';
-
-const ResumeURL = `https://drive.google.com/file/d/1r1XSI5EUuapnXLQq4oTNDI_UW2tQmff8/view`;
+import RESUME_PDF from './resume.pdf';
 
 const Resume = () => {
   const { isDarkMode } = useTheme();
   return (
     <div className={`text-center mt-5`}>
       <a
-        href={ResumeURL}
-        target='_blank'
-        className={`bg-transparent fw-bold border-5 btn btn-lg border-purple ${
-          isDarkMode ? 'text-white' : 'text-purple'
-        } px-5 rounded-pill`}
+        href={RESUME_PDF}
+        download='Adityanarayan Tiwari.pdf'
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`bg-transparent fw-bold border-5 btn btn-lg border-purple ${isDarkMode ? 'text-white' : 'text-purple'
+          } px-5 rounded-pill`}
       >
         Download Resume
       </a>
