@@ -42,3 +42,11 @@
 .mobile-nav-link-font{
   font-size: clamp(0.75rem, 0.5115rem + 1.1923vw, 1.25rem) !important;
 }
+
+.offcanvas{
+  bottom: 0px !important;
+  /* background-color: transparent !important; */
+}
+.offcanvas.offcanvas-bottom{
+  height: max-content !important;
+}
