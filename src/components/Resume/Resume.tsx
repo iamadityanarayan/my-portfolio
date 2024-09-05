@@ -1,5 +1,5 @@
 import { useTheme } from '../../context/ThemeContext';
-import RESUME_PDF from './resume.pdf';
+import RESUME_PDF from './_resume.pdf';
 
 const Resume = () => {
   const { isDarkMode } = useTheme();
